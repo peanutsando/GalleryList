@@ -1,0 +1,4 @@
+<% @gallery_list.each do |list|%>
+      <% gallery = {:galleryId => list.url, :galleryName => list.name} %>
+      <%= gallery.to_json %>
+<% end %>
